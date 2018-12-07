@@ -1,0 +1,13 @@
+{
+    "name": "get_express",
+    "version": "0.1.0",
+    "description": "Get parameters in express",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "~1.14.2",
+        "express": "~4.13.3",
+        "express-handlebars": "^3.0.0"
+    },
+    "author": "Shannon Bradshaw",
+    "license": "0BSD"
+}
