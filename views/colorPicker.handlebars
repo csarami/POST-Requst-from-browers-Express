@@ -4,7 +4,8 @@
         <p>What is your favorite color?</p>
         {{#each colors}}
         <p>
-            <input id= 'color' type="radio" name="color" value="{{this}}"/>{{this}}
+            <input id= '{{this}}' type="radio" name="color" value="{{this}}" style='background-color:{{this}};'/>
+            <label for="{{this}}" style="color:{{this}};">{{this}}</label>
         </p>
         {{/each}}
         <input id='submit' type="submit" value="Submit"/>

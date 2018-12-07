@@ -1,0 +1,19 @@
+1) I have a router that 
+
+
+router.get('/', function(req, res, next) {
+    res.render('colorPicker', { 'colors' : [ 'blue', 'orange', 'red', 'pink', 'green','black' ].sort() });
+});
+
+router.post('/favorite_color', function(req, res, next) {
+    var favorite = req.body.color;
+    if (typeof favorite == 'undefined') {
+        next('Please choose a color!');
+    }
+    else {
+        
+        res.res('chosenColor', {favorite_color: fovoritemessage: "Your favorite color is " + favorite +"<br/><a class='button'  href='/'>back</a>"});
+    }
+});
+
+res.render('"Your favorite color is " + favorite +"<br/><a class='button'  href='/'>back</a>"});
